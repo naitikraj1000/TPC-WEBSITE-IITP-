@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload Info</title>
+	<link rel="stylesheet" type="text/css" href="company_upload_style.css">
+	
+</head>
+<body>
+<h1>Company Qualification Requirements</h1><br>
+	<form action="company_upload.php" method="post">
+		<!-- <label for="company_id">Company ID:</label>
+		<input type="text" id="company_id" name="company_id" required><br>
+
+		<label for="company_name">Company Name:</label>
+		<input type="text" id="company_name" name="company_name" required><br> -->
+
+		<label for="min_qualification">Minimum Qualification:</label>
+		<input type="text" id="min_qualification" name="min_qualification" required><br>
+
+		<label for="marks_criteria">Marks Criteria:</label>
+		<input type="number" id="marks_criteria" name="marks_criteria" step="0.01"><br>
+
+		<label for="starting_salary">Starting Salary Package:</label>
+		<input type="number" id="starting_salary" name="starting_salary" step="0.01"><br>
+
+		<label for="ending_salary">Ending Salary Package:</label>
+		<input type="number" id="ending_salary" name="ending_salary" step="0.01"><br>
+
+		<label for="interview_mode">Mode of Interview:</label>
+		<input type="text" id="interview_mode" name="interview_mode" required><br>
+
+		<label for="current_recruiting_year">Current Recruiting Year:</label>
+		<input type="number" id="current_recruiting_year" name="current_recruiting_year" min="1900" max="2099" required><br>
+
+		<input type="submit" value="Upload">
+	</form>
+</body>
+</html>
+

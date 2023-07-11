@@ -1,0 +1,21 @@
+
+INSERT INTO Companies (company_id, Company_Name, Registering_Year, Marks_Criteria, End_Salary_Package, Mode_of_Interview, Start_Salary_Package)
+VALUES 
+
+('SSW165', 'SwiftStream', 2023, 9, 93, 'Offline', 6),
+('OPW946', 'OptimaWorks', 2023, 7, 94, 'Online', 7),
+('TRS124', 'TrueScope', 2024, 6, 93, 'Offline', 9),
+('HWW582', 'HorizonWorks', 2024, 9, 97, 'Online', 8),
+('APW773', 'ApexWave', 2025, 6, 88, 'Online', 11),
+('ZTT589', 'ZenithTech', 2025, 7, 89, 'Offline',8 ),
+('DGE415', 'DynamicEdge', 2025, 9, 95, 'Online', 7),
+('VTV281', 'VeritasVentures', 2025, 8, 98, 'Offline', 11),
+('INV579', 'InnoVent', 2025, 7, 88, 'Offline', 8),
+('BPK682', 'BluePeak', 2025, 6, 86, 'Online', 9),
+('QSP998', 'QuantumSphere', 2026, 7, 84, 'Online', 10),
+('SWD787', 'SkywardShift', 2026, 9, 88, 'Online', 10),
+('NVV436', 'NovaVerse', 2026, 8, 89, 'Offline', 6),
+('PPM742', 'PrimePulse', 2026, 7, 96, 'Online', 8),
+('SSW165', 'SwiftStream', 2026, 8, 80, 'Offline', 9),
+('GGL111', 'Google', 2027, 6, 84, 'Online', 11),
+('AMZ362', 'Amazon', 2027, 9, 98, 'Offline', 11);

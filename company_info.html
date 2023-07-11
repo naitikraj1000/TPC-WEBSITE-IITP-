@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Company Criteria for Recruitment</title>
+    <link rel="stylesheet" type="text/css" href="company_info_style.css">
+  </head>
+  <body>
+    <h1>Company Criteria for Recruitment</h1>
+    <form action="company_info.php" method="POST">
+    
+      <label for="min-qualification">Minimum Qualification:</label>
+      <select id="min-qualification" name="min-qualification">
+        <option value="B-Tech">B-Tech</option>
+        <option value="M-Tech">M-Tech</option>
+        <option value="Phd">Phd</option>
+      </select><br><br>
+      <label for="min-cpi">Minimum CPI:</label>
+      <input type="number" id="min-cpi" name="min-cpi" step="0.01"><br><br>
+      <label for="salary-range-min">Salary Package Range (LPA):</label>
+      <input type="number" id="salary-range-min" name="salary-range-min" min="0" max="500" step="0.1" value="0">
+      <input type="number" id="salary-range-max" name="salary-range-max" min="0" max="500" step="0.1" value="0"><br><br>
+      <label for="mode-of-interview">Mode of Interview:</label>
+      <select id="mode-of-interview" name="mode-of-interview">
+        <option value="Online">Online</option>
+        <option value="Offline">Offline</option>
+      </select><br><br>
+      <label for="recruitment-year">Recruitment Year at IIT Patna:</label>
+      <input type="number" id="recruitment-year" name="recruitment-year" min="2000" max="2099"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+/* Set the body background color */
+body {
+  background-color: #79cbb8;
+}
+
+/* Set the h1 font size, color, and margin */
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Set the form style */
+form {
+  width: 400px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #cbd18f;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+/* Set the label style */
+label {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Set the input style */
+input[type="email"], input[type="password"], input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px, solid, #111;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* Set the input focus style */
+input[type="email"]:focus, input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Set the submit button style */
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Set the submit button hover style */
+input[type="submit"]:hover {
+  background-color: #666;
+}
+

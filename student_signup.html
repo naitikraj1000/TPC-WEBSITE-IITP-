@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="student_signup_style.css">
+	<script src="student.js"></script>
+	<script>
+    function previewImage(event) {
+			const fileInput = event.target;
+			const imgPreview = document.getElementById('img-preview');
+
+			const file = fileInput.files[0];
+
+			if (file) {
+				const reader = new FileReader();
+
+				reader.addEventListener('load', function () {
+					imgPreview.setAttribute('src', this.result);
+				});
+
+				reader.readAsDataURL(file);
+			}
+		}
+	</script>
+</head>
+<body>
+	<form action="student_signup.php" method="post" enctype="multipart/form-data" onsubmit="return checkEmail()&&checkPasswordsMatch();">
+
+		<div class="image-upload">
+			<label for="profilePhoto" class="upload-btn">
+				<img id="img-preview" src="#">
+				<input type="file" id="profilePhoto" name="profilePhoto" accept="image/*"
+					onclick="previewImage(event)">
+			</label>
+		</div>
+
+		<label for="firstName">First Name:</label>
+		<input type="text" id="firstName" name="firstName" required>
+		<br><br>
+
+		<label for="lastName">Last Name:</label>
+		<input type="text" id="lastName" name="lastName" required>
+		<br><br>
+
+		<label for="rollNo">Roll No:</label>
+		<input type="text" id="rollNo" name="rollNo" required>
+		<br><br>
+
+		<label for="email">Email (with iitp.ac.in):</label>
+		<input type="email" id="email" name="email" required>
+		<br><br>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<br><br>
+
+		<label for="confirmPassword">Confirm Password:</label>
+		<input type="password" id="confirmPassword" name="confirmPassword" required>
+		
+
+		<div id="password-strength"></div><br><br>
+		<button type="submit">Sign Up</button>
+	</form>
+
+</body>
+
+</html>

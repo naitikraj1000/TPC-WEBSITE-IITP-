@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Company Sign Up</title>
+  <link rel="stylesheet" href="company_signup_style.css"><br>
+</head>
+
+<body>
+  <h1>Company Sign Up</h1><br><br>
+  <form action="company_signup.php" method="POST" onsubmit="checkPasswordsMatch();">
+    <label for="company-name"><b>Company Name:</b></label>
+    <input type="text" id="company-name" name="company-name" required><br>
+
+    <label for="company-id"><b>Company ID:</b></label>
+    <input type="text" id="company-id" name="company-id" required><br>
+
+
+    <label for="recruiting_since">Recruiting Since:</label>
+    <input type="number" id="recruiting_since" name="recruiting_since" min="1800" max="2099" required><br>
+
+    <label for="email"><b>Email Address:</b></label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="password"><b>Password:</b></label>
+    <input type="password" id="password" name="password" required><br>
+
+    <label for="confirm-password"><b>Confirm Password:</b></label>
+    <input type="password" id="confirm-password" name="confirm-password" required><br>
+
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <script>
+    function checkPasswordsMatch() {
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirm-password").value;
+      if (password != confirmPassword) {
+        alert("Passwords do not match.");
+        event.preventDefault();
+      }
+    }
+  </script>
+</body>
+
+</html>

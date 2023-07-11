@@ -1,0 +1,67 @@
+/* Resetting styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Body styles */
+body {
+	background-color: #516191;
+}
+
+/* Login container styles */
+.login-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/* Form styles */
+form {
+	background-color: #ffffee;
+	border-radius: 8px;
+	padding: 50px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+/* Input container styles */
+.input-container {
+	margin-bottom: 16px;
+}
+
+.input-container label {
+	display: block;
+	margin-bottom: 8px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.input-container input[type="email"], 
+.input-container input[type="password"] {
+	border: 1px, solid;
+	border-radius: 4px;
+	padding: 20px;
+	width: 100%;
+	font-size: 20px;
+	background-color: #f5f5f5;
+}
+
+/* Button styles */
+button[type="submit"] {
+	background-color: #69c;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+	padding: 12px 24px;
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+	background-color: #4a8;
+}
+

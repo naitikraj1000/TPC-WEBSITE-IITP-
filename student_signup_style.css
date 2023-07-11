@@ -1,0 +1,135 @@
+body {
+	font-family: Arial, sans-serif;
+	  background-color: #516191;
+  }
+  
+  form {
+	margin: 0 auto;
+	max-width: 500px;
+	padding: 40px;
+	background-color: #ffffee;
+	border-radius: 10px;
+	box-shadow: 0 0 20px #111;
+  }
+  
+  label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+	display: block;
+	width: 95%;
+	padding: 15px;
+	border: 1px solid #blue;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	font-size: 16px;
+  }
+  
+  button[type="submit"] {
+	background-color: #69c;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+	background-color: #4a8;
+  }
+  
+  #password-strength {
+	margin-top: 10px;
+	font-size: 14px;
+	font-style: italic;
+  }
+  
+
+
+
+  .image-upload {
+	text-align: center;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	overflow: hidden;
+  }
+  
+  .upload-btn {
+	display: inline-block;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 3px solid #ccc;
+  }
+  
+  .upload-btn img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+  }
+  
+  .upload-btn:before {
+	content: "Upload Photo";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 14px;
+	color: #777;
+  }
+  
+  .upload-btn:hover:before {
+	color: #555;
+  }
+  
+  .upload-btn input[type="file"] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+  }
+  
+  .image-upload.has-image .upload-btn:before {
+	content: none;
+  }
+  
+  .image-upload.has-image .upload-btn img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+  }
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Portal Links</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 70px 40px;
+			background-color: #006699;
+			color: #fff;
+		}
+
+		.logo {
+			width: 200px;
+			height: 200px;
+			margin-right: 10px;
+		}
+
+		h1 {
+			margin-top: 30px;
+			font-size: 70px;
+			text-align: center;
+			color: #006699;
+			/* dark blue */
+			text-shadow: 2px 2px #ccc;
+			/* add a light gray shadow */
+			letter-spacing: 2px;
+			/* increase the letter spacing */
+			text-transform: uppercase;
+			/* convert the text to uppercase */
+			animation-name: slideInLeft;
+			animation-duration: 1s;
+			animation-fill-mode: both;
+		}
+
+		@keyframes slideInLeft {
+			0% {
+				transform: translateX(-100%);
+			}
+
+			100% {
+				transform: translateX(0%);
+			}
+		}
+
+		p {
+			margin: 20px 0;
+			text-align: center;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		li {
+			margin: 10px;
+			display: flex;
+			align-items: center;
+		}
+
+		.icon {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			margin-right: 10px;
+		}
+
+		.student-icon {
+			background-image: url('student-icon.png');
+			background-size: cover;
+			margin-top: 90px;
+		}
+
+		.company-icon {
+			background-image: url('company-icon.png');
+			background-size: cover;
+			margin-top: 90px;
+		}
+
+		.alumni-icon {
+			background-image: url('alumni-icon.png');
+			background-size: cover;
+			margin-top: 90px;
+		}
+
+		body {
+			background: linear-gradient(to bottom, #87CEFA, #fff);
+		}
+
+
+
+
+		a {
+			background-color: #fff;
+			border: 5px solid #006699;
+			color: #006699;
+			display: inline-block;
+			padding: 20px 20px;
+			text-decoration: none;
+			transition: background-color 0.3s ease;
+			margin-top: 90px;
+		}
+
+
+		a:hover {
+			background-color: #006699;
+			color: #fff;
+		}
+
+		.header {
+			/* existing styles */
+			background-image: url('acad.png');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			animation: slide-background 10s ease infinite;
+		}
+
+		@keyframes slide-background {
+			0% {
+				background-position: center;
+			}
+
+			50% {
+				background-position: 50% 0%;
+			}
+
+			100% {
+				background-position: center;
+			}
+		}
+
+
+		/* Center the navbar items */
+		.navbar {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+
+		/* Style the navigation items */
+		.navbar a {
+			display: inline-block;
+			color: black;
+			text-align: center;
+			padding: 10px 10px;
+			text-decoration: none;
+			font-size: 17px;
+			margin-right: 20px;
+		}
+
+		/* Style the dropdown button */
+		.dropbtn {
+			background-color: #4CAF50;
+			color: white;
+			padding: 20px;
+			font-size: 20px;
+			border: none;
+			cursor: pointer;
+			margin-right: 20px;
+		}
+
+		/* Style the dropdown content */
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			z-index: 1;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		/* Style the links in the dropdown content */
+		.dropdown-content a {
+			color: rgb(0, 0, 0);
+			padding: 4px 12px;
+			margin-left: 52.5px;
+			text-decoration: none;
+			display: block;
+		}
+
+
+		/* Add a small gap between "Sign Up" and "Login" links */
+		.dropdown-content a {
+			margin-top: 5px;
+
+		}
+
+		/* Show the dropdown menu when the dropdown button is hovered over */
+		.dropdown:hover .dropdown-content {
+			margin-top: 0px;
+			display: block;
+		}
+
+		.query {
+			text-align: center;
+		}
+
+		.query a {
+			margin-left: 30px;
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			border-radius: 5px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+	</style>
+	</style>
+</head>
+
+<body>
+	<header class="header">
+		<img src="iitp.png" alt="Institute Logo" class="logo">
+	</header>
+
+	<h1>IIT PATNA TRAINING AND PLACEMENT CELL</h1>
+
+	<div class="navbar">
+		<div class="dropdown">
+			<div class="icon student-icon"></div>
+			<button class="dropbtn">Student</button>
+			<div class="dropdown-content">
+				<a href="student_signup.html">Sign Up</a>
+				<a href="student_login.html">Login</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<div class="icon company-icon"></div>
+			<button class="dropbtn">Company</button>
+			<div class="dropdown-content">
+				<a href="company_signup.html">Sign Up</a>
+				<a href="company_login.html">Login</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<div class="icon alumni-icon"></div>
+			<button class="dropbtn">Alumini</button>
+			<div class="dropdown-content">
+				<a href="alumni_login.html">Login</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="query">
+		<a href="query.php">Search</a>
+	</div>
+
+	<div class="query">
+		<a href="admin_login.php">Admin</a>
+	</div>
+
+</body>
+
+</html>
